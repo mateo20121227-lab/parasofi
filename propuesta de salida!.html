@@ -306,7 +306,7 @@
   <!-- PASO 1 -->
   <div class="step on" id="s0">
     <div class="s-head">
-      <div class="eyebrow">la gran pregunta</div>
+      <div class="eyebrow">ver que hacemos</div>
       <h1 class="s-title">que quieres<br>hacer?</h1>
     </div>
 
@@ -314,17 +314,17 @@
       <div class="opt-card" onclick="pickAct(this,'cine','Al Cine','')">
         <div class="opt-accent accent-pink"></div>
         <div class="opt-name">Al Cine</div>
-        <div class="opt-desc">Peli, palomitas y esa vibra de butaca cómoda que ya sabes.</div>
+        <div class="opt-desc">aunque no hay peliculas tan buenas podemos ir</div>
       </div>
       <div class="opt-card" onclick="pickAct(this,'chopo','El Chopo','sel-g')">
         <div class="opt-accent accent-green"></div>
         <div class="opt-name">El Chopo</div>
-        <div class="opt-desc">Discos raros, ropa vintage y el caos más adorable de la CDMX.</div>
+        <div class="opt-desc">ir al chopo para ver que compramos!</div>
       </div>
       <div class="opt-card" onclick="pickAct(this,'plaza','La Plaza','sel-a')">
         <div class="opt-accent accent-amber"></div>
         <div class="opt-name">La Plaza</div>
-        <div class="opt-desc">Café, banca, ver pasar el mundo y platicar. Sencillo y perfecto.</div>
+        <div class="opt-desc">ir a la plaza si quieres incluso pasar al miniso</div>
       </div>
     </div>
 
@@ -336,7 +336,7 @@
       <div class="propose-area" id="propose-area">
         <textarea id="propose-text" placeholder="escríbela aquí..." oninput="checkPropose()"></textarea>
         <div class="propose-footer">
-          <span class="propose-hint">tu propuesta, tus reglas</span>
+          <span class="propose-hint">tu propuesta xd</span>
           <button class="propose-confirm" id="propose-ok" onclick="addPropose()" disabled>Agregar</button>
         </div>
       </div>
@@ -354,7 +354,7 @@
   <!-- PASO 2 -->
   <div class="step" id="s1">
     <div class="s-head">
-      <div class="eyebrow">para organizarnos</div>
+      <div class="eyebrow">para ver si podemos</div>
       <h2 class="s-title">que dia<br>puedes?</h2>
     </div>
 
@@ -380,13 +380,13 @@
   <!-- PASO 3 -->
   <div class="step" id="s2">
     <div class="s-head">
-      <div class="eyebrow">ya casi</div>
+      
       <h2 class="s-title">a que hora<br>puedes?</h2>
     </div>
 
     <div class="time-wrap" id="time-wrap"></div>
 
-    <button class="next-btn" id="next2" onclick="go(3)" disabled>Ver resumen</button>
+    <button class="next-btn" id="next2" onclick="go(3)" disabled>tu respuesta</button>
     <button class="back-btn" onclick="go(1)">volver</button>
   </div>
 
@@ -427,8 +427,8 @@
 <script>
 /* CONFIGURA TU CONTACTO AQUI */
 const CFG = {
-  whatsapp: '',   /* ej: '+5215512345678' */
-  email:    '',   /* ej: 'tu@email.com'   */
+  whatsapp: '',   /* ej: '+525610531155' */
+  email:    '',   /* ej: 'mateo.2012.12.27@gmail.com'   */
 };
 
 const S = { act:null, actLabel:null, day:null, dayLabel:null, time:null };
@@ -602,7 +602,7 @@ function showFinal() {
 }
 
 function msg() {
-  return `hola! aqui mis respuestas para el plan\n\nque quiero hacer: ${S.actLabel}\ndia: ${S.dayLabel}\nhora: ${S.time} hrs\n\nespero que si se pueda!`;
+  return `aqui estan las respuestas xd\n\nque quiero hacer: ${S.actLabel}\ndia: ${S.dayLabel}\nhora: ${S.time} hrs\n\nespero que si se pueda!`;
 }
 
 function sendWA() {
